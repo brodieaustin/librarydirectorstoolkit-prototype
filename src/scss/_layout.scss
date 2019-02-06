@@ -1,0 +1,17 @@
+.container{
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 2rem 0;
+
+  &.flex-container{
+    @media screen and (#{$bp-larger-than-tablet}){
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.site-content{
+  padding-bottom: 4rem;
+}

@@ -1,0 +1,54 @@
+.site-footer{
+  padding-bottom: 2rem;
+  background-color: $primary-color;
+
+  .container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .brand{
+    display: block;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  a{
+    color: $white;
+  }
+}
+
+.contact{
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(70% - 2rem);
+    margin-right: 2rem;
+  }
+
+  a, span{
+    display: block;
+    margin-bottom: .25rem;
+  }
+}
+
+.engage{
+  margin-top: 2.5rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: 30%;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .social{
+    li{
+      margin-right: .5rem;
+
+      @media screen and (#{$bp-larger-than-tablet}){
+        margin-left: .5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

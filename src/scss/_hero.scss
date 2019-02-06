@@ -1,0 +1,63 @@
+.site-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 34rem;
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 0;
+
+  &:after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(lighten($primary-color, 10%), .8);
+  }
+}
+
+.hero-section{
+  position: relative;
+  z-index: 500;
+
+  .container{
+    display: flex;
+    padding: 4rem 8rem 0;
+  }
+
+  .button{
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.hero-text{
+  width: calc(60% - 2rem);
+  margin-right: 2rem;
+  color: $white;
+}
+
+.hero-text-main{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-text-sub{
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+.hero-image{
+  position: relative;
+  width: 40%;
+  top: -3rem;
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}

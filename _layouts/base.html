@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title != 'Homepage' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,700" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!--header-->
+  {% include header.html %}
+
+  <!--content-->
+  <main class="site-content" role="main">
+    {{ content }}
+  </main><!-- content -->
+
+  <!--footer-->
+  {% include footer.html %}
+
+</body>
+</html>

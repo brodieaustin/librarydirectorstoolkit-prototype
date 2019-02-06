@@ -1,0 +1,3 @@
+title: "The Public Library Director's Toolkit"
+baseurl: "/gatheringplaces-prototype"
+exclude: ['node_modules/', 'gulpfile.js', 'package.json', 'src/']

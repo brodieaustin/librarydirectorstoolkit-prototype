@@ -1,0 +1,3 @@
+title: "The Public Library Director's Toolkit"
+baseurl: ""
+exclude: ['node_modules', 'src', 'gulpfile.js', 'package.json']
