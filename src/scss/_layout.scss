@@ -3,6 +3,7 @@
   max-width: $max-width;
   margin: 0 auto;
   padding: 2rem 2rem 0;
+  z-index: 1000;
 
   &.flex-container{
     @media screen and (#{$bp-larger-than-tablet}){

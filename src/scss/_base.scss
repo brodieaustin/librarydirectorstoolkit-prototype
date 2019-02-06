@@ -8,6 +8,7 @@ html{
 }
 
 body{
+  position: relative;
   margin: 0 auto;
   padding: 0;
   background-color: $background-color;
@@ -47,5 +48,4 @@ a{
   &:hover{
     opacity: .7;
   }
-
 }

@@ -6,6 +6,7 @@ html {
   padding: 0; }
 
 body {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   background-color: #EDEEEE;
@@ -42,7 +43,8 @@ a {
   position: relative;
   max-width: 64rem;
   margin: 0 auto;
-  padding: 2rem 2rem 0; }
+  padding: 2rem 2rem 0;
+  z-index: 1000; }
   @media screen and (min-width: 800px) {
     .container.flex-container {
       display: flex;
