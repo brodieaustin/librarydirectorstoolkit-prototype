@@ -1,8 +1,14 @@
 .site-header{
   position: relative;
+  background: url('../img/header-background.jpg') no-repeat top center;
+  background-size: cover;
   z-index: 500;
 
   .container{
     padding-bottom: 2rem;
+  }
+
+  &.no-background{
+    background: transparent;
   }
 }

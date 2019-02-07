@@ -1,0 +1,17 @@
+.filter-section{
+  background-color: $white;
+
+  .container{
+    padding: 4rem 2rem 3rem;
+  }
+
+  h2{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 100%;
+  }
+}
+
+.filters-type, .filters-category{
+  width: 50%;
+}

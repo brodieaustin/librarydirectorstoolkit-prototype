@@ -1,6 +1,8 @@
 .site-footer{
+  position: relative;
   padding-bottom: 2rem;
   background-color: $primary-color;
+  overflow: hidden;
 
   .container{
     padding-top: 4rem;
@@ -16,6 +18,12 @@
 
   a{
     color: $white;
+  }
+
+  #gear1{
+    top: unset;
+    bottom: 15%;
+    right: 20%;
   }
 }
 
