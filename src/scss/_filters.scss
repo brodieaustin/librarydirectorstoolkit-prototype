@@ -13,5 +13,14 @@
 }
 
 .filters-type, .filters-category{
-  width: 50%;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(50% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.filters-type{
+  margin-bottom: 2rem;
 }

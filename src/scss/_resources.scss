@@ -1,15 +1,25 @@
 .resource-previews{
   @include unstyled-list;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -2rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+  }
 }
 
 .resource-preview{
-  width: calc(33.333% - 2rem);
-  margin-left: 2rem;
   margin-bottom: 2rem;
   background-color: $white;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    width: calc(50% - 2rem);
+    margin-left: 2rem;
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    width: calc(33.333% - 2rem);
+  }
 
   a{
     display: block;

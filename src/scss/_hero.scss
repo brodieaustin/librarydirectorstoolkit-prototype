@@ -1,14 +1,23 @@
-.site-background{
+.hero-background{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 34rem;
-  background-image: url(../img/background.jpg);
+  height: 30%;
+  background-image: url(../img/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   z-index: 0;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    height: 40rem;
+    background-image: url(../img/background.jpg);
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    height: 34rem;
+  }
 }
 
 .hero-section{
@@ -17,7 +26,12 @@
 
   .container{
     display: flex;
-    padding: 4rem 8rem 0;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 4rem;
+
+    @media screen and (#{$bp-larger-than-desktop}){
+      padding: 4rem 8rem 0;
+    }
   }
 
   .button{
@@ -27,15 +41,36 @@
 }
 
 .hero-text{
-  width: calc(60% - 2rem);
-  margin-right: 2rem;
+  order: 2;
+  margin: 1rem auto auto;
   color: $white;
+  text-align: center;
+
+  @media screen and (#{$bp-larger-than-mobile}){
+    width: 70%;
+  }
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    order: 1;
+    width: calc(50% - 2rem);
+    margin: 4rem 2rem auto auto;
+    text-align: left;
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    width: calc(60% - 2rem);
+    margin-top: 2rem;
+  }
 }
 
 .hero-text-main{
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.1;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    font-size: 2.5rem;
+  }
 }
 
 .hero-text-sub{
@@ -45,8 +80,20 @@
 
 .hero-image{
   position: relative;
-  width: 40%;
-  top: -3rem;
+  order: 1;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
+  @media screen and (#{$bp-larger-than-mobile}){
+    width: 50%;
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    top: -3rem;
+    order: 2;
+    width: 40%;
+  }
 
   img{
     max-width: 100%;
