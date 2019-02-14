@@ -683,3 +683,51 @@ a {
   font-size: .75rem; }
   .tag a {
     display: block; }
+
+.events-section {
+  background-color: #fff; }
+  .events-section h2 {
+    margin-bottom: 1rem; }
+
+.events-previews {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.event-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background-color: #EDEEEE; }
+
+.event-preview-meta {
+  width: 100%;
+  padding: 2rem;
+  background-color: #1C262C;
+  color: #fff;
+  text-align: center; }
+  @media screen and (min-width: 736px) {
+    .event-preview-meta {
+      width: 25%; } }
+  .event-preview-meta .event-time {
+    display: inline-block; }
+    @media screen and (min-width: 736px) {
+      .event-preview-meta .event-time {
+        display: block; } }
+  .event-preview-meta .event-date {
+    font-size: 2rem; }
+    @media screen and (min-width: 736px) {
+      .event-preview-meta .event-date {
+        font-size: 3rem; } }
+  .event-preview-meta .event-location {
+    font-style: italic;
+    font-size: .875rem; }
+
+.event-preview-details {
+  padding: 2rem; }
+  @media screen and (min-width: 736px) {
+    .event-preview-details {
+      width: 75%; } }
+  .event-preview-details h3 {
+    margin-top: 0;
+    font-weight: 700; }

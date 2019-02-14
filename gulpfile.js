@@ -48,6 +48,7 @@ function watchFiles() {
       "./assets/**/*",
       "./index.html",
       "./resources/index.html",
+      "./events/index.html",
     ],
     gulp.series(jekyll, browserSyncReload)
   );
