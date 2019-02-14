@@ -11,9 +11,14 @@
 
   .brand{
     display: block;
+    width: 100%;
     padding: 0;
     margin-bottom: 1rem;
     font-size: 1.125rem;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: 50%;
+    }
   }
 
   a{

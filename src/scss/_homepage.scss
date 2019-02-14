@@ -149,8 +149,7 @@
       width: 60%;
       height: 50rem;
       padding: 4rem;
-      font-size: 1rem;
-    }
+      font-size: 1rem; }
   }
 }
 
@@ -185,14 +184,14 @@
   text-align: center;
   margin-bottom: 2rem;
 
+  &:last-child{
+    margin-bottom: 0;
+  }
+
   @media screen and (#{$bp-larger-than-tablet}){
     width: calc(50% - 2rem);
     margin-left: 2rem;
     margin-bottom: 2rem;
-
-    &:last-child{
-      margin-bottom: 0;
-    }
   }
 
   @media screen and (#{$bp-larger-than-desktop}){
