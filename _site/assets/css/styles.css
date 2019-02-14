@@ -23,7 +23,7 @@ h1 {
 
 h3, h4, h5, h6 {
   font-weight: 500;
-  color: #394D58; }
+  color: #1C262C; }
 
 h2 {
   text-transform: uppercase;
@@ -616,6 +616,50 @@ a {
   max-width: 75%;
   margin-bottom: 2rem;
   font-size: 1.125rem; }
+
+.page-section .container {
+  padding-top: 0; }
+
+.user-content {
+  clear: both;
+  margin-bottom: 2rem; }
+  .user-content:last-child {
+    margin-bottom: 0; }
+  @media screen and (min-width: 736px) {
+    .user-content p, .user-content ul, .user-content ol, .user-content blockquote {
+      max-width: 60%; } }
+  .user-content a {
+    text-decoration: underline; }
+    .user-content a.button {
+      text-decoration: none; }
+  .user-content h2 {
+    font-size: 1.5rem; }
+  .user-content ul {
+    list-style: square;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0; }
+    .user-content ul li {
+      margin-bottom: .5rem; }
+  .user-content blockquote {
+    clear: both;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: #1C262C;
+    line-height: 1.4; }
+  .user-content figure {
+    margin: 2rem 0; }
+    @media screen and (min-width: 1280px) {
+      .user-content figure {
+        float: right;
+        margin: 2rem 0 2rem 2rem; } }
+    .user-content figure img {
+      max-width: 100%;
+      height: auto; }
+    .user-content figure figcaption {
+      margin: .25rem 0;
+      font-size: .875rem;
+      font-style: italic; }
 
 .resource-previews {
   list-style: none;
