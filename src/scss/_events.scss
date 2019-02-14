@@ -62,3 +62,27 @@
     font-weight: 700;
   }
 }
+
+.speakers-section{
+
+  h2{
+    width: 100%;
+  }
+
+  .authors-photos{
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: 40%;
+      order: 2;
+    }
+
+  }
+
+  .speakers-cta{
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      order: 1;
+      width: 60%;
+    }
+  }
+}

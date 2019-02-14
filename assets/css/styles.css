@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 700; }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-weight: 500;
   color: #394D58; }
 
@@ -57,7 +57,7 @@ a {
 
 .button {
   display: inline-block;
-  padding: .5rem 1.25rem;
+  padding: .675rem 1.25rem;
   border: 0;
   text-decoration: none;
   letter-spacing: 2px;
@@ -67,11 +67,12 @@ a {
   transition: opacity .2s ease; }
   .button.more {
     display: block;
-    width: 40%;
+    width: 30%;
+    padding: 1rem 2rem;
     margin: 2rem auto;
     background: #394D58;
     text-align: center;
-    color: #333; }
+    color: #fff; }
   .button:hover {
     opacity: .7; }
   .button.border {
@@ -79,6 +80,7 @@ a {
     border: 2px solid #394D58;
     color: #394D58; }
   .button.solid {
+    border: 2px solid #394D58;
     background: #394D58;
     color: #fff; }
   .button.disabled {
@@ -731,3 +733,16 @@ a {
   .event-preview-details h3 {
     margin-top: 0;
     font-weight: 700; }
+
+.speakers-section h2 {
+  width: 100%; }
+
+@media screen and (min-width: 736px) {
+  .speakers-section .authors-photos {
+    width: 40%;
+    order: 2; } }
+
+@media screen and (min-width: 736px) {
+  .speakers-section .speakers-cta {
+    order: 1;
+    width: 60%; } }
