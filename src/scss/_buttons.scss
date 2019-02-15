@@ -11,12 +11,17 @@
 
   &.more{
     display: block;
-    width: 30%;
+    width: 60%;
+    max-width: 20rem;
     padding: 1rem 2rem;
     margin: 2rem auto;
     background: $primary-color;
     text-align: center;
     color: $white;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: 30%;
+    }
   }
 
   &:hover{

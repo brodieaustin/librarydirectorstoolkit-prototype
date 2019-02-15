@@ -50,6 +50,7 @@ function watchFiles() {
       "./resources/index.html",
       "./events/index.html",
       "./about/index.html",
+      "./reviews/index.html",
     ],
     gulp.series(jekyll, browserSyncReload)
   );
