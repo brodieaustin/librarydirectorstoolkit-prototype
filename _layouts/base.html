@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,700" rel="stylesheet">
   <link href="{{ site.baseurl }}/assets/css/styles.css" rel="stylesheet">
 </head>
-<body>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
   <!--header-->
   {% include header.html %}
 

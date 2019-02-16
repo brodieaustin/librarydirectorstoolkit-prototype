@@ -7,8 +7,14 @@
   .container{
     padding-bottom: 2rem;
   }
+}
 
-  &.no-background{
+.homepage{
+  .site-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: transparent;
   }
 }
